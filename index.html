@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Ñandú Software</title>
-<link rel="icon" type="image/png" href="images/x-icon.png">
-<style>
-body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
-.header { background:#003366; color:#fff; padding:10px; font-size:22px; }
-.layout { display:table; width:100%; }
-.content { display:table-cell; padding:15px; }
-.sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; }
-.nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
-.product { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
-</style>
-</head>
-<body>
-<div class="header">Ñandú Software</div>
-<div class="layout">
-<div class="content">
-<h2>Bienvenido</h2>
-<p>Listado de los los productos que voy publicando.</p>
-
-<h2>Productos</h2>
-<div class="product">
-<b><a href="publisat.html">PubliSat</a></b><br>
-Gestión de tráfico comercial.
-</div>
-
-<div class="product">
-<b><a href="psync.html">PSync</a></b><br>
-Sincronización de materiales y programaciones entre servidores.
-</div>
-
-</div>
-
-<div class="sidebar">
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="publisat.html">PubliSat</a>
-<a href="psync.html">PSync</a>
-<a href="descargas.html">Descargas</a>
-<a href="contacto.html">Contacto</a>
-</div>
-</div>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ñandú Software</title>
+    <link rel="icon" type="image/png" href="images/x-icon.png">
+    <style>
+      body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
+      .header { background:#003366; color:#fff; padding:10px; font-size:22px; }
+      .layout { display:table; width:100%; min-height:100vh; }
+      .content { display:table-cell; padding:15px; }
+      .content-inner { max-width:1000px; margin:auto;}
+      .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
+      .nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
+      .nav a:hover { filter: brightness(1.1); }
+      ul { margin-left:20px; }
+      .img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
+      .badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
+      .badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
+      .badges img:hover { filter: brightness(1.1); }
+      .badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
+      .box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
+    </style>
+  </head>
+  <body>
+    <div class="header">Ñandú Software</div>
+    <div class="layout">
+      <div class="content">
+        <h2>Bienvenido</h2>
+        <p>Listado de los los productos que voy publicando.</p>
+        <h2>Productos</h2>
+        <div class="box">
+          <b><a href="publisat.html">PubliSat</a></b><br>
+          Gestión de tráfico comercial.
+        </div>
+        <div class="box">
+          <b><a href="psync.html">PSync</a></b><br>
+          Sincronización de materiales y programaciones entre servidores.
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="publisat.html">PubliSat</a>
+          <a href="psync.html">PSync</a>
+          <a href="descargas.html">Descargas</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

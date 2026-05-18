@@ -7,13 +7,19 @@
     <style>
       body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
       .header { background:#003366; color:#fff; padding:10px; font-size:22px; }
-      .layout { display:table; width:100%; }
+      .layout { display:table; width:100%; min-height:100vh; }
       .content { display:table-cell; padding:15px; }
-      .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; }
+      .content-inner { max-width:1000px; margin:auto;}
+      .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
       .nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
+      .nav a:hover { filter: brightness(1.1); }
       ul { margin-left:20px; }
-      .img { border:1px solid #999; margin-top:10px; max-width:100%; }
-      .box { border:1px solid #ccc; padding:10px; background:#f9f9f9; }
+      .img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
+      .badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
+      .badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
+      .badges img:hover { filter: brightness(1.1); }
+	  .badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
+      .box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
     </style>
   </head>
   <body>
@@ -52,6 +58,11 @@
           <a href="psync.html">PSync</a>
           <a href="descargas.html">Descargas</a>
           <a href="contacto.html">Contacto</a>
+		  <div class="badges">
+            <a class="badge-link" href="https://winscp.net/" target="_blank">
+            <img src="images/WebBadgesWinSCP.png" alt="Powered by WinSCP">
+            </a>
+		  </div>
         </div>
       </div>
     </div>
