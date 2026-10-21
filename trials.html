@@ -2,7 +2,6 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ñandú Software - Solicitud de Trial</title>
         <link rel="icon" type="image/png" href="images/x-icon.png">
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
@@ -78,7 +77,7 @@
                             <label for="hardwareid">Código de Producto (Hardware ID)</label>
                             <input type="text" id="hardwareid" name="hardware_id" maxlength="255" spellcheck="false" autocapitalize="off" required>
 
-                            <input type="hidden" name="_subject" value="Solicitud de trial de PSync">
+                            <input type="hidden" id="subject" name="_subject" value="Solicitud de trial de producto">
 
                             <button type="submit">Solicitar habilitación</button>
 							<div id="formStatus" role="status"
@@ -150,6 +149,18 @@
 					button.textContent = "Reintentar envío";
 				}		
 			});
+		</script>
+		<script>
+			const producto = document.getElementById("producto");
+			const subject = document.getElementById("subject");
+
+			function ActualizarSubject() {
+				subject.value = "Solicitud de trial de " + producto.value;
+			}
+
+			producto.addEventListener("change", ActualizarSubject);
+
+			ActualizarSubject();
 		</script>
     </body>
 </html>
