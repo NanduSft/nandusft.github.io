@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Ñandú Software - PubliSat</title>
-    <link rel="icon" type="image/png" href="images/x-icon.png">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
-     crossorigin="anonymous"></script>
-    <style>
-      body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
-      .header { background:#003366; color:#fff; padding:10px; font-size:22px; }
-      .layout { display:table; width:100%; min-height:100vh; }
-      .content { display:table-cell; padding:15px; }
-      .content-inner { max-width:1000px; margin:auto;}
-      .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
-      .nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
-      .nav a:hover { filter: brightness(1.1); }
-      ul { margin-left:20px; }
-      .img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
-      .badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
-      .badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
-      .badges img:hover { filter: brightness(1.1); }
-	  .badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
-      .box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
-    </style>
-  </head>
-  <body>
-    <div class="header">PubliSat</div>
-    <div class="layout">
-      <div class="content">
-        <p>
-          <b>PubliSat</b> es una herramienta diseñada para emisoras que utilizan sistemas como Dinesat o HDX,
-          permitiendo gestionar programación comercial, materiales y contenidos de forma rápida y ordenada.
-        </p>
-        <p>
-          Su interfaz está pensada para ser familiar y simple al usuario.
-        </p>
-        <h3>Puntos fuertes</h3>
-        <ul>
-          <li>✔ Integración directa con Dinesat y HDX</li>
-          <li>✔ Interfaz similar a sistemas conocidos (no hay curva de aprendizaje)</li>
-          <li>✔ Gestión centralizada de clientes, materiales y programación</li>
-          <li>✔ Automatización de tareas repetitivas</li>
-          <li>✔ Compatible con audio, video y noticias</li>
-        </ul>
-        <h3>Funciones principales</h3>
-        <ul>
-          <li>Editor externo configurable para audio, video o texto</li>
-          <li>Agregar materiales a múltiples tandas simultáneamente</li>
-          <li>Modificación masiva de contratos y fechas</li>
-          <li>Lista de apariciones de materiales en programación</li>
-          <li>Importación y exportación (TXT, CSV, XML)</li>
-          <li>Guardado automático</li>
-          <li>Cálculo de duración por tanda</li>
-          <li>Bloques organizados por horario</li>
-          <li>Búsqueda avanzada por múltiples campos</li>
-        </ul>
-        <b>Gestión de Clientes:</b>
-        <ul>
-          <li>Control de fechas de contrato</li>
-          <li>Asignación por días, horarios y rubros</li>
-          <li>Inserción automática inteligente en programación</li>
-        </ul>
-        <h3>Intefaz</h3>
-        <img src="images/PublisatAllTabs.png" class="img-main">
-        <p>
-          Disponible en versiones para <b>audio</b>, <b>video</b> y <b>noticias</b>.<br>
-          Contáctese por su prueba gratuita por 30 días.
-        </p>
-      </div>
-      <div class="sidebar">
-        <div class="nav">
-          <a href="index.html">Home</a>
-          <a href="publisat.html">PubliSat</a>
-          <a href="psync.html">PSync</a>
-          <a href="descargas.html">Descargas</a>
-          <a href="contacto.html">Contacto</a>
-          <div class="badges">
-            <a class="badge-link" href="https://winscp.net/" target="_blank">
-            <img src="images/WebBadgesWinSCP.png" alt="Powered by WinSCP">
-            </a>
-            <a class="badge-link" href="https://www.videolan.org/vlc/" target="_blank">
-            <img src="images/WebBadgeVLC.png" alt="Powered by VLC">
-            </a>
-            <a class="badge-link" href="https://github.com/mono/taglib-sharp" target="_blank">
-            <img src="images/WebBadgesTagLib.png" alt="Powered by TagLib#">
-            </a>
-            <a class="badge-link" href="https://github.com/naudio/NAudio" target="_blank">
-            <img src="images/WebBadgesNAudio.png" alt="Powered by NAudio">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ñandú Software - PubliSat</title>
+        <link rel="icon" type="image/png" href="images/x-icon.png" />
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
+            .header { background:#003366; color:#fff; padding:10px; font-size:22px; }
+            .layout { display:table; width:100%; min-height:100vh; }
+            .content { display:table-cell; padding:15px; }
+            .content-inner { max-width:1000px; margin:auto;}
+            .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
+            .nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
+            .nav a:hover { filter: brightness(1.1); }
+            ul { margin-left:20px; }
+            .img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
+            .badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
+            .badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
+			.badges img:hover { filter: brightness(1.1); }
+			.badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
+            .box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
+			@media (max-width:650px) {
+              .layout,
+              .content,
+              .sidebar {display:block; width:auto;}
+              .sidebar {padding:5px 0;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">PubliSat</div>
+        <div class="layout">
+            <div class="content">
+                <div class="content-inner">
+                    <p>
+                        <b>PubliSat</b>
+                        es una herramienta diseñada para emisoras que utilizan
+                        sistemas como Dinesat o HDX, permitiendo gestionar
+                        programación comercial, materiales y contenidos de forma
+                        rápida y ordenada.
+                    </p>
+                    <p>
+                        Su interfaz está pensada para ser familiar y simple al
+                        usuario.
+                    </p>
+                    <h3>Puntos fuertes</h3>
+                    <ul>
+                        <li>✔ Integración directa con Dinesat y HDX</li>
+                        <li>✔ Interfaz similar a sistemas conocidos (no hay curva de aprendizaje)</li>
+                        <li>✔ Gestión centralizada de clientes, materiales y programación</li>
+                        <li>✔ Automatización de tareas repetitivas</li>
+                        <li>✔ Compatible con audio, video y noticias</li>
+                    </ul>
+                    <h3>Funciones principales</h3>
+                    <ul>
+                        <li>Editor externo configurable para audio, video o texto </li>
+                        <li>Agregar materiales a múltiples tandas simultáneamente</li>
+                        <li>Modificación masiva de contratos y fechas</li>
+                        <li>Lista de apariciones de materiales en programación</li>
+                        <li>Importación y exportación (TXT, CSV, XML)</li>
+                        <li>Guardado automático</li>
+                        <li>Cálculo de duración por tanda</li>
+                        <li>Bloques organizados por horario</li>
+                        <li>Búsqueda avanzada por múltiples campos</li>
+                    </ul>
+                    <b>Gestión de Clientes:</b>
+                    <ul>
+                        <li>Control de fechas de contrato</li>
+                        <li>Asignación por días, horarios y rubros</li>
+                        <li>Inserción automática inteligente en programación</li>
+                    </ul>
+                    <h3>Intefaz</h3>
+                    <img src="images/PublisatAllTabs.png" class="img-main" />
+                    <p>
+                        Disponible en versiones para <b>audio</b>, <b>video</b> y <b>noticias</b>.<br>
+                        Descargue la aplicación desde <a href="descargas.html">aquí</a><br>
+                        Solicite una licencia trial <a href="trials.html">aquí</a>
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar">
+				<div class="nav">
+					<a href="index.html">Home</a>
+					<a href="publisat.html">PubliSat</a>
+					<a href="psync.html">PSync</a>
+					<a href="descargas.html">Descargas</a>
+					<a href="trials.html">Solicitar trial</a>
+					<a href="contacto.html">Contacto</a>
+					<div class="badges">
+						<a class="badge-link" href="https://winscp.net/" target="_blank">
+							<img src="images/WebBadgesWinSCP.png" alt="Powered by WinSCP">
+						</a>
+						<a class="badge-link" href="https://www.videolan.org/vlc/" target="_blank">
+							<img src="images/WebBadgeVLC.png" alt="Powered by VLC">
+						</a>
+						<a class="badge-link" href="https://github.com/mono/taglib-sharp" target="_blank">
+							<img src="images/WebBadgesTagLib.png" alt="Powered by TagLib#">
+						</a>
+						<a class="badge-link" href="https://github.com/naudio/NAudio" target="_blank">
+							<img src="images/WebBadgesNAudio.png" alt="Powered by NAudio">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

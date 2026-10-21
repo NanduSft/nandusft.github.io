@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Ñandú Software - PSync</title>
-    <link rel="icon" type="image/png" href="images/x-icon.png">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
-     crossorigin="anonymous"></script>
-    <style>
-      body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
-      .header { background:#003366; color:#fff; padding:10px; font-size:22px; }
-      .layout { display:table; width:100%; min-height:100vh; }
-      .content { display:table-cell; padding:15px; }
-      .content-inner { max-width:1000px; margin:auto;}
-      .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
-      .nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
-      .nav a:hover { filter: brightness(1.1); }
-      ul { margin-left:20px; }
-      .img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
-      .badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
-      .badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
-      .badges img:hover { filter: brightness(1.1); }
-	  .badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
-      .box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
-    </style>
-  </head>
-  <body>
-    <div class="header">PSync</div>
-    <div class="layout">
-      <div class="content">
-        <p>
-          <b>PSync</b> es una herramienta diseñada para sincronizar 2 servidores de Dinesat con el fin de,
-          poder contar con un segundo equipo listo para su uso en una contingencia o para compartir materiales
-          y programaciones entre varias emisoras.
-        </p>
-        <h3>Elementos sincronizados</h3>
-        <ul>
-          <li>Categorías en su orden correspondiente</li>
-          <li>Materiales con su metadata</li>
-          <li>Programaciones</li>
-        </ul>
-        <h3>No sincroniza</h3>
-        <ul>
-          <li>MATERIALID de los materiales(Se verifican por Código)</li>
-          <li>Páginas del Asistente en vivo(iPlay/Botonera)</li>
-          <li>Formatos aleatorios</li>
-          <li>Usuarios</li>
-          <li>Registros de emisión</li>
-        </ul>
-        <h3>Intefaz</h3>
-        <img src="images/PSyncUI.png" class="img-main">
-        <p>
-          Contáctese por su prueba gratuita por 30 días.
-        </p>
-      </div>
-      <div class="sidebar">
-        <div class="nav">
-          <a href="index.html">Home</a>
-          <a href="publisat.html">PubliSat</a>
-          <a href="psync.html">PSync</a>
-          <a href="descargas.html">Descargas</a>
-          <a href="contacto.html">Contacto</a>
-		  <div class="badges">
-            <a class="badge-link" href="https://winscp.net/" target="_blank">
-            <img src="images/WebBadgesWinSCP.png" alt="Powered by WinSCP">
-            </a>
-		  </div>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ñandú Software - PSync</title>
+        <link rel="icon" type="image/png" href="images/x-icon.png" />
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
+            .header { background:#003366; color:#fff; padding:10px; font-size:22px; }
+            .layout { display:table; width:100%; min-height:100vh; }
+            .content { display:table-cell; padding:15px; }
+            .content-inner { max-width:1000px; margin:auto;}
+            .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
+            .nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
+            .nav a:hover { filter: brightness(1.1); }
+            ul { margin-left:20px; }
+            .img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
+            .badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
+            .badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
+            .badges img:hover { filter: brightness(1.1); }
+			.badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
+            .box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
+			@media (max-width:650px) {
+              .layout,
+              .content,
+              .sidebar {display:block; width:auto;}
+              .sidebar {padding:5px 0;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">PSync</div>
+        <div class="layout">
+            <div class="content">
+                <div class="content-inner">
+                    <p>
+                        <b>PSync</b> es una herramienta diseñada para sincronizar 2
+                        servidores de Dinesat con el fin de, poder contar con un
+                        segundo equipo listo para su uso en una contingencia o
+                        para compartir materiales y programaciones entre varias
+                        emisoras.
+                    </p>
+                    <h3>Elementos sincronizados</h3>
+                    <ul>
+                        <li>Categorías en su orden correspondiente</li>
+                        <li>Materiales con su metadata</li>
+                        <li>Programaciones</li>
+                    </ul>
+                    <h3>No sincroniza</h3>
+                    <ul>
+                        <li>MATERIALID de los materiales</li>
+                        <li>Páginas del Asistente en vivo(iPlay/Botonera)</li>
+                        <li>Formatos aleatorios</li>
+                        <li>Usuarios</li>
+                        <li>Registros de emisión</li>
+                    </ul>
+                    <h3>Intefaz</h3>
+                    <img src="images/PSyncUI.png" class="img-main" />
+                    <p>
+                        Descargue la aplicación desde <a href="descargas.html">aquí</a><br>
+                        Solicite una licencia trial <a href="trials.html">aquí</a>
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="publisat.html">PubliSat</a>
+                    <a href="psync.html">PSync</a>
+                    <a href="descargas.html">Descargas</a>
+                    <a href="trials.html">Solicitar trial</a>
+                    <a href="contacto.html">Contacto</a>
+                    <div class="badges">
+                        <a class="badge-link" href="https://winscp.net/" target="_blank">
+                            <img src="images/WebBadgesWinSCP.png" alt="Powered by WinSCP">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

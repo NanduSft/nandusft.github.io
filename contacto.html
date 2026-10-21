@@ -2,60 +2,70 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ñandú Software - Contacto</title>
 		<link rel="icon" type="image/png" href="images/x-icon.png">
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
 			crossorigin="anonymous"></script>
 		<style>
-			body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
-			.header { background:#003366; color:#fff; padding:10px; font-size:22px; }
-			.layout { display:table; width:100%; min-height:100vh; }
-			.content { display:table-cell; padding:15px; }
-			.content-inner { max-width:1000px; margin:auto;}
-			.sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
-			.nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
-			.nav a:hover { filter: brightness(1.1); }
-			ul { margin-left:20px; }
-			.img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
-			.badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
-			.badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
-			.badges img:hover { filter: brightness(1.1); }
-			.badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
-			.box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
+			body {font-family:Tahoma, Verdana; margin:0; background:#fff;}
+			.header {background:#003366; color:#fff; padding:10px; font-size:22px;}
+			.layout {display:table; width:100%; min-height:100vh;}
+			.content {display:table-cell; padding:15px; vertical-align:top;}
+			.content-inner {max-width:1000px; margin:auto;}
+			.sidebar {display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative;}
+			.nav a {display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000;}
+			.nav a:hover {filter:brightness(1.1);}
+			ul {margin-left:20px;}
+			.img-main {border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left;}
+			.badges {position:fixed; bottom:10px; right:10px; width:200px; text-align:center;}
+			.badges img {width:180px; height:auto; margin-top:5px; image-rendering: pixelated;}
+			.badges img:hover {filter: brightness(1.1);}
+			.badge-link {background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
+			.box {border:1px solid #ccc; padding:12px; margin-bottom:10px; max-width:600px; box-sizing:border-box;}
 			.contact-form {max-width:600px;}
-			.contact-form label { display:block; margin-top:12px; }
+			.contact-form label {display:block; margin-top:12px;}
 			.contact-form input,
 			.contact-form textarea {box-sizing:border-box; width:100%; padding:8px; margin-top:4px; font-family:Tahoma, Verdana; border:1px solid #aaa;}
 			.contact-form textarea {resize:vertical;}
 			.contact-form button {margin-top:12px; padding:8px 16px; background:#003366; color:#fff; border:1px solid #002244; cursor:pointer; font-family:Tahoma, Verdana;}
-			.contact-form button:hover { filter:brightness(1.15); }
+			.contact-form button:hover {filter:brightness(1.15);}
+			@media (max-width:650px) {
+              .layout,
+              .content,
+              .sidebar {display:block; width:auto;}
+              .sidebar {padding:5px 0;}
+            }
 		</style>
 	</head>
 	<body>
 		<div class="header">Contacto</div>
 		<div class="layout">
 			<div class="content">
-				<h2>Formulario de contacto</h2>
-				<div class="box">
-					<form id="contactForm" class="contact-form" action="https://formsubmit.co/eae2aca005a5a8a97cbe4298a73af45a" method="POST">
+				<div class="content-inner">
+					<h2>Formulario de contacto</h2>
+					<div class="box">
+						<form id="contactForm" class="contact-form" action="https://formsubmit.co/eae2aca005a5a8a97cbe4298a73af45a" method="POST">
+						
+							<label for="nombre">Nombre</label>
+							<input type="text" id="nombre" name="nombre" maxlength="100" required>
 
-						<label for="nombre">Nombre</label>
-						<input type="text" id="nombre" name="nombre" maxlength="100" required>
+							<label for="email">Correo electrónico</label>
+							<input type="email" id="email" name="email" maxlength="254" required>
 
-						<label for="email">Correo electrónico</label>
-						<input type="email" id="email" name="email" maxlength="254" required>
+							<label for="asunto">Asunto</label>
+							<input type="text" id="asunto" name="_subject" value="Consulta" maxlength="150" required>
 
-						<label for="asunto">Asunto</label>
-						<input type="text" id="asunto" name="_subject" value="Consulta" maxlength="150" required>
+							<label for="mensaje">Mensaje</label>
+							<textarea id="mensaje" name="mensaje" rows="6" maxlength="5000" required></textarea>
 
-						<label for="mensaje">Mensaje</label>
-						<textarea id="mensaje" name="mensaje" rows="6" maxlength="5000" required></textarea>
-
-						<button type="submit">Enviar consulta</button>
-						<div id="formStatus" role="status"
+							<button type="submit">Enviar consulta</button>
+							<div id="formStatus" role="status"
 							aria-live="polite" style="display:none; margin-top:12px;">
-						</div>
-					</form>
+							</div>
+						</form>
+					</div>
+					<p>También puedes enviarnos un correo directamente a <a href="mailto:nandusoftwarear@gmail.com">nandusoftwarear@gmail.com</a>.</p>
 				</div>
 			</div>
 			<div class="sidebar">
@@ -64,7 +74,8 @@
 					<a href="publisat.html">PubliSat</a>
 					<a href="psync.html">PSync</a>
 					<a href="descargas.html">Descargas</a>
-					<a href="contacto.html">Contacto</a>
+					<a href="trials.html">Solicitar trial</a>
+					<a href="contacto.html">Contacto</a>					
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ñandú Software - Solicitud de Trial</title>
+        <link rel="icon" type="image/png" href="images/x-icon.png">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
+			crossorigin="anonymous"></script>
+        <style>
+            body {font-family:Tahoma, Verdana; margin:0; background:#fff;}
+            .header {background:#003366; color:#fff; padding:10px; font-size:22px;}
+            .layout {display:table; width:100%; min-height:100vh;}
+            .content {display:table-cell; padding:15px; vertical-align:top;}
+            .content-inner {max-width:1000px; margin:auto;}
+            .sidebar {display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative;}
+            .nav a {display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000;}
+            .nav a:hover {filter:brightness(1.1);}
+			ul {margin-left:20px;}
+			.img-main {border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left;}
+			.badges {position:fixed; bottom:10px; right:10px; width:200px; text-align:center;}
+			.badges img {width:180px; height:auto; margin-top:5px; image-rendering: pixelated;}
+			.badges img:hover {filter: brightness(1.1);}
+			.badge-link {background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
+            .box {border:1px solid #ccc; padding:12px; margin-bottom:10px; max-width:600px; box-sizing:border-box;}
+            .trial-form {max-width:600px;}
+            .trial-form label {display:block; margin-top:12px;}
+            .trial-form input {box-sizing:border-box; width:100%; padding:8px; margin-top:4px; font-family:Tahoma, Verdana; font-size:13px; border:1px solid #aaa;}
+            .trial-form button {margin-top:15px; padding:8px 16px; background:#003366; color:#fff; border:1px solid #002244; cursor:pointer; font-family:Tahoma, Verdana;}
+            .trial-form button:hover {filter:brightness(1.15);}
+            .notice {border:1px solid #ccc; background:#f5f5f5; padding:10px; margin-bottom:15px; max-width:600px;}
+            @media (max-width:650px) {
+              .layout,
+              .content,
+              .sidebar {display:block; width:auto;}
+              .sidebar {padding:5px 0;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">Solicitud de período de prueba</div>
+
+        <div class="layout">
+            <div class="content">
+                <div class="content-inner">
+                    <h2>Solicitar habilitación de producto</h2>
+
+                    <p>
+                        Completá el siguiente formulario para solicitar un
+                        período de prueba de cualquier producto.
+                    </p>
+
+                    <div class="notice">
+                        <b>Plazo de habilitación: hasta 48 horas.</b>
+                        <p>
+                            Una vez habilitada la licencia, te avisaremos por
+                            correo electrónico. El producto seleccionado podrá
+                            descargarla automáticamente al iniciar.
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <form class="trial-form" action="https://formsubmit.co/eae2aca005a5a8a97cbe4298a73af45a" method="POST">
+							<label for="producto">Producto</label>
+							<select id="producto" name="producto" required style="box-sizing:border-box; width:100%; max-width:600px; padding:8px; margin-top:4px; font-family:Tahoma, Verdana; font-size:13px; border:1px solid #aaa;">
+								<option value="" selected disabled>Seleccioná un producto</option>
+								<option value="PubliSat">PubliSat</option>
+								<option value="PSync">PSync</option>
+							</select>
+							
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" maxlength="100" autocomplete="name" required>
+
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
+
+                            <label for="hardwareid">Código de Producto (Hardware ID)</label>
+                            <input type="text" id="hardwareid" name="hardware_id" maxlength="255" spellcheck="false" autocapitalize="off" required>
+
+                            <input type="hidden" name="_subject" value="Solicitud de trial de PSync">
+
+                            <button type="submit">Solicitar habilitación</button>
+							<div id="formStatus" role="status"
+							aria-live="polite" style="display:none; margin-top:12px;">
+							</div>
+                        </form>
+                    </div>
+
+                    <p>
+                        Si tenés algún inconveniente con la solicitud, podés contactarnos desde el <a href="contacto.html">fromulario de contacto</a> o escribirnos a <a href="mailto:nandusoftwarear@gmail.com">nandusoftwarear@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="publisat.html">PubliSat</a>
+                    <a href="psync.html">PSync</a>
+                    <a href="descargas.html">Descargas</a>
+                    <a href="trials.html">Solicitar trial</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+		<script>
+			const form = document.getElementById("contactForm");
+			const status = document.getElementById("formStatus");
+			const button = form.querySelector('button[type="submit"]');
+
+			form.addEventListener("submit", async function (event) {
+				event.preventDefault();
+
+				if (!form.reportValidity()) return;
+
+				button.disabled = true;
+				button.textContent = "Enviando...";
+				status.style.display = "block";
+				status.style.color = "#003366";
+				status.textContent = "Solicitando habilitación, esperá un momento...";
+
+				try {
+					const response = await fetch(
+						"https://formsubmit.co/ajax/nandusoftwarear@gmail.com",
+						{
+							method: "POST",
+							headers: {
+								"Accept": "application/json"
+							},
+							body: new FormData(form)
+						}
+					);
+
+					const result = await response.json();
+
+					if (!response.ok || !result.success) {
+						throw new Error("No se pudo confirmar el envío.");
+					}
+
+					form.reset();
+					status.style.color = "#176b32";
+					status.textContent = "Tu solicitud fue enviada correctamente. Gracias por confiar en Ñandú Software.";
+					button.textContent = "Enviado";
+
+				} catch (error) {
+					status.style.color = "#a00000";
+					status.textContent = "No pudimos confirmar el envío. Revisá tu conexión e intentá nuevamente.";
+					button.disabled = false;
+					button.textContent = "Reintentar envío";
+				}		
+			});
+		</script>
+    </body>
+</html>
