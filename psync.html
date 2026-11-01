@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8">
         <title>Ñandú Software - PSync</title>
-        <link rel="icon" type="image/png" href="images/x-icon.png" />
-        <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716"
-            crossorigin="anonymous"
-        ></script>
-        <style>
-            body { font-family: Tahoma, Verdana; margin:0; background:#fff; }
-            .header { background:#003366; color:#fff; padding:10px; font-size:22px; }
-            .layout { display:table; width:100%; min-height:100vh; }
-            .content { display:table-cell; padding:15px; }
-            .content-inner { max-width:1000px; margin:auto;}
-            .sidebar { display:table-cell; width:220px; background:#efefef; vertical-align:top; position:relative; }
-            .nav a { display:block; padding:8px; margin:5px; background:#ddd; border:1px solid #aaa; text-decoration:none; color:#000; }
-            .nav a:hover { filter: brightness(1.1); }
-            ul { margin-left:20px; }
-            .img-main { border:1px solid #999; margin-top:10px; width: 90%; max-width: 1000px; height:auto; display:block; margin:left; }
-            .badges { position:fixed; bottom:10px; right:10px; width:200px; text-align:center; }
-            .badges img { width:180px; height:auto; margin-top:5px; image-rendering: pixelated; }
-            .badges img:hover { filter: brightness(1.1); }
-			.badge-link { background:none !important; border:none !important; padding:0 !important; margin:0 !important; display:inline !important;}
-            .box { border:1px solid #ccc; padding:10px; margin-bottom:10px; }
-			@media (max-width:650px) {
-              .layout,
-              .content,
-              .sidebar {display:block; width:auto;}
-              .sidebar {padding:5px 0;}
-            }
-        </style>
+        <link rel="icon" type="image/png" href="images/x-icon.png">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2711270489585716" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="header">PSync</div>
+	    <div class="header">
+            Ñandú Software
+            <small>Software para trabajar mejor</small>
+        </div>
+		
         <div class="layout">
+		
+			<div class="sidebar">
+                <div class="nav">
+					<div class="nav-title">Navegación</div>
+                    <a href="index.html">Inicio</a>
+                    <a href="publisat.html">PubliSat</a>
+                    <a href="psync.html" class="current">PSync</a>
+                    <a href="descargas.html">Descargas</a>
+                    <a href="trials.html">Solicitar trial</a>
+                    <a href="contacto.html">Contacto</a>
+				</div>
+					
+                <div class="badges">
+					<div class="badge-title">Tecnologías utilizadas</div>
+                    <a class="badge-link" href="https://winscp.net/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/WebBadgesWinSCP.png" alt="Powered by WinSCP">
+                    </a>
+                </div>
+					                
+            </div>
+			
             <div class="content">
                 <div class="content-inner">
-                    <p>
-                        <b>PSync</b> es una herramienta diseñada para sincronizar 2
-                        servidores de Dinesat con el fin de, poder contar con un
-                        segundo equipo listo para su uso en una contingencia o
-                        para compartir materiales y programaciones entre varias
-                        emisoras.
-                    </p>
+				
+					<h2>PSync - Sincronización de servidores</h2>
+				
+					<div class="intro">
+						<p>
+							<b>PSync</b> es una herramienta diseñada para sincronizar 2
+							servidores de Dinesat con el fin de, poder contar con un
+							segundo equipo listo para su uso en una contingencia o
+							para compartir materiales y programaciones entre varias
+							emisoras.
+						</p>
+					</div>
                     <h3>Elementos sincronizados</h3>
                     <ul>
                         <li>Categorías en su orden correspondiente</li>
@@ -59,29 +63,29 @@
                         <li>Usuarios</li>
                         <li>Registros de emisión</li>
                     </ul>
-                    <h3>Intefaz</h3>
-                    <img src="images/PSyncUI.png" class="img-main" />
-                    <p>
-                        Descargue la aplicación desde <a href="descargas.html">aquí</a><br>
-                        Solicite una licencia trial <a href="trials.html">aquí</a>
+                    <h3>Intefaz del programa</h3>
+					<p>
+                            Una interfaz simple que permite seleccionar que se quiere sincronizar.
                     </p>
-                </div>
-            </div>
-            <div class="sidebar">
-                <div class="nav">
-                    <a href="index.html">Home</a>
-                    <a href="publisat.html">PubliSat</a>
-                    <a href="psync.html">PSync</a>
-                    <a href="descargas.html">Descargas</a>
-                    <a href="trials.html">Solicitar trial</a>
-                    <a href="contacto.html">Contacto</a>
-                    <div class="badges">
-                        <a class="badge-link" href="https://winscp.net/" target="_blank">
-                            <img src="images/WebBadgesWinSCP.png" alt="Powered by WinSCP">
-                        </a>
+                    <img src="images/PSyncUI.png" class="img-main" />
+					<div class="image-caption">PSync - Pantalla principal del sistema</div>
+					
+                    <div class="action-box">
+                        <a href="descargas.html" class="button">Descargar PSync</a>
+                        <a href="trials.html" class="button">Solicitar licencia trial</a>
+                    </div>
+
+                    <div class="info-bar">
+                        <strong>Ñandú Software</strong> | PSync - Sincronizacion de servidores
                     </div>
                 </div>
             </div>
+            
         </div>
+		
+		<div class="footer">
+            Ñandú Software &copy; 2026 - Todos los derechos reservados
+        </div>
+		
     </body>
 </html>
